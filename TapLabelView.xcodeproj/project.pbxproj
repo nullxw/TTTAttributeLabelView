@@ -14,6 +14,10 @@
 		108E81251B2C38EF0054E14A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 108E81241B2C38EF0054E14A /* Images.xcassets */; };
 		108E81281B2C38EF0054E14A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 108E81261B2C38EF0054E14A /* LaunchScreen.xib */; };
 		108E81341B2C38EF0054E14A /* TapLabelViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 108E81331B2C38EF0054E14A /* TapLabelViewTests.m */; };
+		108E81401B2C39080054E14A /* TTTAttributedLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 108E813F1B2C39080054E14A /* TTTAttributedLabel.m */; };
+		108E81431B2C390E0054E14A /* TTTAttributeLabelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 108E81421B2C390E0054E14A /* TTTAttributeLabelView.m */; };
+		108E81481B2C39E30054E14A /* ConfigAttributedString.m in Sources */ = {isa = PBXBuildFile; fileRef = 108E81451B2C39E30054E14A /* ConfigAttributedString.m */; };
+		108E81491B2C39E30054E14A /* NSString+RichText.m in Sources */ = {isa = PBXBuildFile; fileRef = 108E81471B2C39E30054E14A /* NSString+RichText.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +44,14 @@
 		108E812D1B2C38EF0054E14A /* TapLabelViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TapLabelViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		108E81321B2C38EF0054E14A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		108E81331B2C38EF0054E14A /* TapLabelViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TapLabelViewTests.m; sourceTree = "<group>"; };
+		108E813E1B2C39080054E14A /* TTTAttributedLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTAttributedLabel.h; sourceTree = "<group>"; };
+		108E813F1B2C39080054E14A /* TTTAttributedLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTTAttributedLabel.m; sourceTree = "<group>"; };
+		108E81411B2C390E0054E14A /* TTTAttributeLabelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTAttributeLabelView.h; sourceTree = "<group>"; };
+		108E81421B2C390E0054E14A /* TTTAttributeLabelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTTAttributeLabelView.m; sourceTree = "<group>"; };
+		108E81441B2C39E30054E14A /* ConfigAttributedString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfigAttributedString.h; sourceTree = "<group>"; };
+		108E81451B2C39E30054E14A /* ConfigAttributedString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfigAttributedString.m; sourceTree = "<group>"; };
+		108E81461B2C39E30054E14A /* NSString+RichText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+RichText.h"; sourceTree = "<group>"; };
+		108E81471B2C39E30054E14A /* NSString+RichText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+RichText.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +97,11 @@
 				108E811C1B2C38EF0054E14A /* AppDelegate.m */,
 				108E811E1B2C38EF0054E14A /* ViewController.h */,
 				108E811F1B2C38EF0054E14A /* ViewController.m */,
+				108E81441B2C39E30054E14A /* ConfigAttributedString.h */,
+				108E81451B2C39E30054E14A /* ConfigAttributedString.m */,
+				108E81461B2C39E30054E14A /* NSString+RichText.h */,
+				108E81471B2C39E30054E14A /* NSString+RichText.m */,
+				108E813D1B2C39080054E14A /* TTTAttributedLabel */,
 				108E81211B2C38EF0054E14A /* Main.storyboard */,
 				108E81241B2C38EF0054E14A /* Images.xcassets */,
 				108E81261B2C38EF0054E14A /* LaunchScreen.xib */,
@@ -117,6 +134,17 @@
 				108E81321B2C38EF0054E14A /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		108E813D1B2C39080054E14A /* TTTAttributedLabel */ = {
+			isa = PBXGroup;
+			children = (
+				108E81411B2C390E0054E14A /* TTTAttributeLabelView.h */,
+				108E81421B2C390E0054E14A /* TTTAttributeLabelView.m */,
+				108E813E1B2C39080054E14A /* TTTAttributedLabel.h */,
+				108E813F1B2C39080054E14A /* TTTAttributedLabel.m */,
+			);
+			path = TTTAttributedLabel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,9 +247,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				108E81491B2C39E30054E14A /* NSString+RichText.m in Sources */,
+				108E81431B2C390E0054E14A /* TTTAttributeLabelView.m in Sources */,
 				108E81201B2C38EF0054E14A /* ViewController.m in Sources */,
 				108E811D1B2C38EF0054E14A /* AppDelegate.m in Sources */,
 				108E811A1B2C38EF0054E14A /* main.m in Sources */,
+				108E81481B2C39E30054E14A /* ConfigAttributedString.m in Sources */,
+				108E81401B2C39080054E14A /* TTTAttributedLabel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
